@@ -11,7 +11,7 @@ class SettingsPage extends StatelessWidget {
         backgroundColor: Colors.white,
         elevation: 0,
         actions: [
-          FlatButton.icon(
+          TextButton.icon(
             icon: Icon(Icons.logout),
             label: Text('Sign out'),
             onPressed: () => FirebaseAuth.instance.signOut(),

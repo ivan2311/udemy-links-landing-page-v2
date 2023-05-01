@@ -20,14 +20,16 @@ class ButtonLink extends StatelessWidget {
           padding: const EdgeInsets.only(bottom: 16.0),
           child: SizedBox(
             width: width > 680 ? 680 : width * 0.95,
-            child: FlatButton(
-              padding: EdgeInsets.symmetric(vertical: 25),
+            child: TextButton(
+              style: TextButton.styleFrom(
+                padding: EdgeInsets.symmetric(vertical: 25),
+                foregroundColor: Colors.tealAccent,
+              ),
               onPressed: () => launch(url),
               child: Text(
                 title,
                 style: TextStyle(fontSize: 16),
               ),
-              color: Colors.tealAccent,
             ),
           ),
         );

@@ -58,7 +58,7 @@ class EditButton extends StatelessWidget {
                 ),
               ),
               actions: [
-                FlatButton(
+                TextButton(
                   onPressed: () {
                     final userChangedTitle =
                         document.title != _titleTextController.text;
@@ -86,7 +86,7 @@ class EditButton extends StatelessWidget {
                   },
                   child: Text('Edit'),
                 ),
-                FlatButton(
+                TextButton(
                     onPressed: () => Navigator.of(context).pop(),
                     child: Text('Cancel')),
               ],

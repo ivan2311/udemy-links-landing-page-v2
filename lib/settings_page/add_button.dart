@@ -19,13 +19,16 @@ class AddButton extends StatelessWidget {
     final _formKey = GlobalKey<FormState>();
     return SizedBox(
       width: width,
-      child: FlatButton(
-        padding: EdgeInsets.symmetric(vertical: 25),
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(15),
+      child: TextButton(
+        style: TextButton.styleFrom(
+          foregroundColor: Colors.greenAccent.shade400,
+          padding: EdgeInsets.symmetric(vertical: 25),
+          textStyle: const TextStyle(fontSize: 20),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(15),
+          ),
         ),
         child: Text('Add button'),
-        color: Colors.greenAccent.shade400,
         onPressed: () {
           showDialog(
             context: context,
@@ -61,7 +64,7 @@ class AddButton extends StatelessWidget {
                   ),
                 ),
                 actions: [
-                  FlatButton(
+                  TextButton(
                     onPressed: () {
                       if (_formKey.currentState.validate()) {
                         _linksCollection.add(
@@ -77,7 +80,7 @@ class AddButton extends StatelessWidget {
                     },
                     child: Text('Add'),
                   ),
-                  FlatButton(
+                  TextButton(
                       onPressed: () => Navigator.of(context).pop(),
                       child: Text('Cancel')),
                 ],

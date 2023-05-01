@@ -63,7 +63,7 @@ class LoginPage extends StatelessWidget {
                     SizedBox(
                       height: 40,
                       width: double.infinity,
-                      child: FlatButton(
+                      child: TextButton(
                         onPressed: () {
                           if (_formKey.currentState.validate()) {
                             final _email = _emailController.text;
@@ -84,7 +84,9 @@ class LoginPage extends StatelessWidget {
                           'Login',
                           style: TextStyle(color: Colors.white),
                         ),
-                        color: Colors.blueAccent,
+                        style: TextButton.styleFrom(
+                          foregroundColor: Colors.blueAccent,
+                        ),
                       ),
                     )
                   ],
@@ -105,7 +107,7 @@ class LoginPage extends StatelessWidget {
           title: Text('Oh Snap!'),
           content: Text(error.message),
           actions: [
-            FlatButton(
+            TextButton(
               onPressed: () {
                 Navigator.of(context).pop();
               },

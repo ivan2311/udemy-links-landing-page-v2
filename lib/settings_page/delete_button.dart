@@ -25,9 +25,11 @@ class DeleteButton extends StatelessWidget {
                   'Are you sure you want to delete the ${document.title} button?'),
               content: Text('The deleted links are not retrievable.'),
               actions: [
-                FlatButton(
+                TextButton(
                   child: Text('Delete'),
-                  color: Colors.redAccent,
+                  style: TextButton.styleFrom(
+                    foregroundColor: Colors.redAccent,
+                  ),
                   onPressed: () {
                     _linksCollection.doc(document.id).delete();
                     Navigator.of(context).pop();
