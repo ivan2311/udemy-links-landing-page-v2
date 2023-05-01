@@ -16,7 +16,7 @@ class Footer extends StatelessWidget {
         ),
         SizedBox(width: 8),
         Image.network(
-          'https://www.didierboelens.com/images/blog/hummingbird_logo.png',
+          'https://cdn.dribbble.com/users/6233776/screenshots/14433953/media/f12a4d762078538c4a59b524ef5c9962.png?compress=1&resize=400x300&vertical=top',
           width: 25,
         )
       ],

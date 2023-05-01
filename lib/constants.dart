@@ -7,4 +7,4 @@ final documents = [
 ];
 
 final imageUrl =
-    'https://pbs.twimg.com/profile_images/1300331531357974528/ZGAghO7W_400x400.jpg';
+    'https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg';
